@@ -1,5 +1,5 @@
 # **Finding Lane Lines on the Road**
-![Final lane line output image](examples/laneLines_thirdPass.jpg)
+![Final lane line output image](pipeline_test_images/laneLines_final.jpg)
 
 ## Project Overview
 
