@@ -1,5 +1,5 @@
 # **Finding Lane Lines on the Road**
-![Final lane line output image](pipeline_test_images/laneLines_final.jpg)
+![Final lane line output image](examples/laneLines_thirdPass.jpg)
 
 ## Project Overview
 
@@ -82,7 +82,7 @@ Based on the information from Wikipedia
 
 As this function takes a kernel_size parameter which must be positive and odd. Hence, the values which I tried ranged between 3 to 11 and cross checked the result with the output of the 'canny' function.
 
-Some of the drawbacks faced when using a larger kernel_size value was that the images became more blurry. Therefore the value which worked best was the value 5.
+Some of the drawbacks faced when using a larger kernel_size value was that the images became more blurry. Therefore the value which worked best was the value 3.
 
 The output images of this step of the pipeline is as follows:
 
@@ -136,7 +136,7 @@ The list of parameters that required tuning are as follows:
 * rho: Distance resolution of the accumulator in pixels.
 * theta: Angle resolution of the accumulator in radians.
 * threshold: Accumulator threshold parameter.
-* minLineLength: Minimum line length. Line segments shorter than that are rejected.
+* minLineLength: Minimum line length defines the minimum length of line that will be created. Line segments shorter than that are rejected.
 * maxLineGap: Maximum allowed gap between points on the same line to link them.
 
 The following line of code returns a list of lines that are detected:
